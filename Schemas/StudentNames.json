@@ -125,6 +125,7 @@
     "SubRoutes": [
         "Read",
         "Insert",
-        "Delete"
+        "Delete",
+        "Image"
     ]
 }
