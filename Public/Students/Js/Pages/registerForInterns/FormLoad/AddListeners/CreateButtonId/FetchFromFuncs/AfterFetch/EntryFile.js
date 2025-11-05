@@ -1,32 +1,19 @@
-let StartFunc = () => {
-    let jVarLocalYouserName = jFLocalyourUsername();
-    let jVarLocalMail = jFLocalEmailId();
+import { StartFunc as StartFuncFromStatus200 } from "./status200.js";
+import { StartFunc as StartFuncFromStatus409 } from "./status409.js";
 
-    const url = new URL(window.location.href);
-    const params1 = new URLSearchParams(url.search);
-    let NewURl = new URL("./checkMailV1.html", url);
-    const new_url = new URL(`${NewURl.href}?${params1}`);
-    new_url.searchParams.append('userName', jVarLocalYouserName);
-    new_url.searchParams.append('userMail', jVarLocalMail);
+let StartFunc = ({ inFetchStatus }) => {
+    switch (inFetchStatus.status) {
+        case 200:
+            StartFuncFromStatus200({ inFetchResult: inFetchStatus.text() });
 
-    window.location.href = new_url.href;
-};
+            break;
+        case 409:
+            StartFuncFromStatus409({ inFetchResult: inFetchStatus.text() });
 
-let jFLocalyourUsername = () => {
-    let jVarLocalyourUsername = 'StudentNameId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalyourUsername);
+            break;
+        default:
 
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.value.trim();
-    };
-};
-
-let jFLocalEmailId = () => {
-    let jVarLocalEmailId = 'EmailId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalEmailId);
-
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.value.trim();
+            break;
     };
 };
 
