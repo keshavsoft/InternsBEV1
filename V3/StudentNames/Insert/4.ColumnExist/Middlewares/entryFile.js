@@ -1,4 +1,4 @@
-const CommonColumnsArray = ["StudentName","Mobile","email","CollegeName","Country","EntranceRank","YearPassOut","Back_logs","RollNumber","file","GitLink"];
+const CommonColumnsArray = ["StudentName","Mobile","Email","CollegeName","Country","EntranceRank","YearPassOut","Back_logs","RollNumber","file","GitLink","Intern2025"];
 import { StartFunc as StartFuncFromForMissingFields } from "./forMissingFields.js";
 import { StartFunc as StartFuncFromForExtraFields } from "./forExtraFields.js";
 

@@ -74,3 +74,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.3.2
 
 - register perfect
+
+### 1.3.3
+
+- V3 perfect

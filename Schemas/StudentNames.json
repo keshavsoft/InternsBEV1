@@ -16,8 +16,8 @@
             "isInput": true
         },
         {
-            "field": "email",
-            "title": "email",
+            "field": "Email",
+            "title": "Email",
             "unique": true,
             "type": "text",
             "isInput": true
@@ -110,6 +110,13 @@
         {
             "field": "GitLink",
             "title": "GitLink",
+            "unique": false,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "Intern2025",
+            "title": "Intern2025",
             "unique": false,
             "type": "text",
             "isInput": true

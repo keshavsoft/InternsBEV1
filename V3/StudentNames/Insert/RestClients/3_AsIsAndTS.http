@@ -4,7 +4,7 @@ Content-Type: application/json
 {
   "StudentName": "",
   "Mobile": "",
-  "email": "",
+  "Email": "",
   "CollegeName": "",
   "Country": "",
   "EntranceRank": "",
@@ -12,5 +12,6 @@ Content-Type: application/json
   "Back_logs": "",
   "RollNumber": "",
   "file": "",
-  "GitLink": ""
+  "GitLink": "",
+  "Intern2025": ""
 }

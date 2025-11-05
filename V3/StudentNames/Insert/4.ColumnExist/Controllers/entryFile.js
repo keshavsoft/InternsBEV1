@@ -4,6 +4,7 @@ import {
 
 let postFilterDataFromBodyFunc = (req, res) => {
     let LocalRequestBody = req.body;
+	let LocalCoumnIntern2025 = LocalRequestBody.Intern2025;
 	let LocalCoumnGitLink = LocalRequestBody.GitLink;
 	let LocalCoumnfile = LocalRequestBody.file;
 	let LocalCoumnRollNumber = LocalRequestBody.RollNumber;
@@ -12,11 +13,11 @@ let postFilterDataFromBodyFunc = (req, res) => {
 	let LocalCoumnEntranceRank = LocalRequestBody.EntranceRank;
 	let LocalCoumnCountry = LocalRequestBody.Country;
 	let LocalCoumnCollegeName = LocalRequestBody.CollegeName;
-	let LocalCoumnemail = LocalRequestBody.email;
+	let LocalCoumnEmail = LocalRequestBody.Email;
 	let LocalCoumnMobile = LocalRequestBody.Mobile;
 	let LocalCoumnStudentName = LocalRequestBody.StudentName;
 
-    let LocalFromRepo = postDefaultFuncFromRepo({LocalCoumnStudentName,LocalCoumnMobile,LocalCoumnemail,LocalCoumnCollegeName,LocalCoumnCountry,LocalCoumnEntranceRank,LocalCoumnYearPassOut,LocalCoumnBack_logs,LocalCoumnRollNumber,LocalCoumnfile,LocalCoumnGitLink});
+    let LocalFromRepo = postDefaultFuncFromRepo({LocalCoumnStudentName,LocalCoumnMobile,LocalCoumnEmail,LocalCoumnCollegeName,LocalCoumnCountry,LocalCoumnEntranceRank,LocalCoumnYearPassOut,LocalCoumnBack_logs,LocalCoumnRollNumber,LocalCoumnfile,LocalCoumnGitLink,LocalCoumnIntern2025});
 
     if (LocalFromRepo.KTF === false) {
         res.status(409).send(LocalFromRepo.KReason);

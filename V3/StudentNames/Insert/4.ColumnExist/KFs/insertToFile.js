@@ -6,7 +6,7 @@ const StartFunc = ({ }) => {
   const LocalFileName = ParamsJson.TableName;
   const LocalDataPath = ParamsJson.DataPath;
 
-  let LocalinDataToInsert = {StudentName : LocalCoumnStudentName,Mobile : LocalCoumnMobile,email : LocalCoumnemail,CollegeName : LocalCoumnCollegeName,Country : LocalCoumnCountry,EntranceRank : LocalCoumnEntranceRank,YearPassOut : LocalCoumnYearPassOut,Back_logs : LocalCoumnBack_logs,RollNumber : LocalCoumnRollNumber,file : LocalCoumnfile,GitLink : LocalCoumnGitLink};
+  let LocalinDataToInsert = {StudentName : LocalCoumnStudentName,Mobile : LocalCoumnMobile,Email : LocalCoumnEmail,CollegeName : LocalCoumnCollegeName,Country : LocalCoumnCountry,EntranceRank : LocalCoumnEntranceRank,YearPassOut : LocalCoumnYearPassOut,Back_logs : LocalCoumnBack_logs,RollNumber : LocalCoumnRollNumber,file : LocalCoumnfile,GitLink : LocalCoumnGitLink,Intern2025 : LocalCoumnIntern2025};
 
   const filePath = `${LocalDataPath}/${LocalFileName}.json`;
   let LocalReturnObject = {};
