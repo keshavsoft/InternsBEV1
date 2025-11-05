@@ -126,6 +126,7 @@
         "Read",
         "Insert",
         "Delete",
-        "Image"
+        "Image",
+        "Mail"
     ]
 }

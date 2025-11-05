@@ -58,3 +58,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.0.3
 
 - registerForInterns started...
+
+### 1.0.4
+
+- registerForInterns perfect
