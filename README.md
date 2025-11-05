@@ -66,3 +66,7 @@ Ensure Node.js version is v22.22 or above
 ### 1.0.5
 
 - protected started
+
+### 1.3.1
+
+- V3 perfect

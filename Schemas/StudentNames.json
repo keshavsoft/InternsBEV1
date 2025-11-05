@@ -127,6 +127,7 @@
         "Insert",
         "Delete",
         "Image",
-        "Mail"
+        "Mail",
+        "InsertWithChecks"
     ]
 }
